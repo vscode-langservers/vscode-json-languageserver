@@ -175,14 +175,14 @@ If you plan to integrate the JSON language server into an editor and IDE, check 
 You can also launch the language server as a command and connect to it.
 For that, install the `json-language-server` npm module:
 
-`npm install -g json-language-server`
+`npm install -g vscode-json-languageserver`
 
 Start the language server with the `json-language-server` command. Use a command line argument to specify the prefered communication channel:
 
 ```
-json-language-server --node-ipc
-json-language-server --stdio
-json-language-server --socket=<port>
+vscode-json-languageserver --node-ipc
+vscode-json-languageserver --stdio
+vscode-json-languageserver --socket=<port>
 ```
 
 To connect to the server from NodeJS, see Remy Suen's great write-up on [how to communicate with the server](https://github.com/rcjsuen/dockerfile-language-server-nodejs#communicating-with-the-server) through the available communication channels.
